@@ -35,10 +35,10 @@ for frase in dadosComprimidos:
         proximo +=1
     concatenador = dicionario[frase].decode(decodificacao)
 
-video = False
+video = True
 
 if(video):
-    arquivoResultante = open("02_resultante" + ".mp4", "wb")
+    arquivoResultante = open("disco_resultante" + ".mp4", "wb")
 else:
     arquivoResultante = open("corpus16MB_resultante" + ".txt", "wb")
 
