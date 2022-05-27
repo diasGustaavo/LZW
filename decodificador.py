@@ -12,7 +12,7 @@ contexto = 15
 tamanhoDicionario = 256
 dicionario = dict([(x, x.to_bytes(1,'big')) for x in range(256)])
 tamanhoMáximoTabela = pow(2,contexto)           
-dedadosComprimidos = []    # variable to store the compressed data.
+dedadosComprimidos = []
 concatenador = ""
 proximo = 256
 
