@@ -3,7 +3,6 @@ from sys import argv
 import struct
 from struct import *
 
-
 decodificacao = 'latin-1'
 dadosComprimidos = []
 alfabeto = 256
@@ -16,7 +15,7 @@ dedadosComprimidos = []
 concatenador = ""
 proximo = 256
 
-with open('Compressão_15.lwz', 'rb') as f:
+with open('Comprimido_15.lwz', 'rb') as f:
     while True:
         lido = f.read(2)
         if len(lido) != 2:
@@ -25,7 +24,6 @@ with open('Compressão_15.lwz', 'rb') as f:
         dadosComprimidos.append(data)
 
 for frase in dadosComprimidos:
-    
     if not (frase in dicionario):
         dicionario[frase] = (concatenador + concatenador[0]).encode(decodificacao)
     dedadosComprimidos.append(dicionario[frase])

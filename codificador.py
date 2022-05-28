@@ -54,7 +54,7 @@ def Compressor(k,flag):
         
         dados_comprimidos.append(dicionario[concatena])
 
-    arquivo_de_saida = open("Compressão" + "_" + str(k) + ".lwz", "wb")
+    arquivo_de_saida = open("Comprimido" + "_" + str(k) + ".lwz", "wb")
     for data in dados_comprimidos:
         arquivo_de_saida.write(pack('>H',data))
     fim = time.time()
